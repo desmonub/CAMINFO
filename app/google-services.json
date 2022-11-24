@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "871582308024",
+    "firebase_url": "https://caminfo-884b1-default-rtdb.firebaseio.com",
+    "project_id": "caminfo-884b1",
+    "storage_bucket": "caminfo-884b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:871582308024:android:a6101068dd9a07f1a3464d",
+        "android_client_info": {
+          "package_name": "com.example.camifno"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "871582308024-jqb3l35v483a2607i0vfen7gk72pa6iq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrh8x-xiC6WL3HjjkB9i_0J6x1ddWhCs4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "871582308024-jqb3l35v483a2607i0vfen7gk72pa6iq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Anemosphere"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="CAM Info"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            style="@style/cardviewStyle">
+
+            <LinearLayout style="@style/dataviewgroupstyle">
+
+                <TextView
+                    android:id="@+id/Temp"
+                    android:text="Temperature"
+                    style="@style/datafieldtopic" />
+
+                <Space style="@style/datafielddivider" />
+
+                <ScrollView style="@style/datavaluescrollview">
+                    <TextView
+                        android:id="@+id/t1"
+                        style="@style/datafieldvalues" />
+                </ScrollView>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/cardviewStyle">
+
+            <LinearLayout
+                style="@style/dataviewgroupstyle">
+
+                <TextView
+                    android:id="@+id/Hum"
+                    android:text="Humidity"
+                    style="@style/datafieldtopic" />
+                <Space style="@style/datafielddivider" />
+                <ScrollView style="@style/datavaluescrollview">
+                    <TextView
+                        android:id="@+id/t2"
+                        style="@style/datafieldvalues" />
+                </ScrollView>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/cardviewStyle">
+
+            <LinearLayout
+                style="@style/dataviewgroupstyle">
+
+                <TextView
+                    android:id="@+id/Gas"
+                    android:text="Gas"
+                    style="@style/datafieldtopic" />
+
+                <Space style="@style/datafielddivider" />
+
+                <ScrollView style="@style/datavaluescrollview">
+                    <TextView
+                        android:id="@+id/t3"
+                        style="@style/datafieldvalues" />
+                </ScrollView>
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
